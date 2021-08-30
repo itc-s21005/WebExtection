@@ -40,12 +40,12 @@
 <p>CSSでフォントを指定するにはfont-familyプロパティを使用します。カンマで区切って複数のフォントを指定しておくと、1つ目から順に探して最初に見つかったフォントで表示されます。どれも見つからなかったときの保険として、必ず最後に一般的なフォントファミリーを指すキーワードを入れておきます。</p>
 
 <ul>
-	<li>5種類の一般フォントファミリーキーワード</li>
-	<li>sans-serif</li>
-	<li>serif</li>
-	<li>cursive</li>
-	<li>fantasy</li>
-	<li>monospace</li>
+    <li><a href="#headline1037">5種類の一般フォントファミリーキーワード</a></li>
+    <li><a href="#headline1040">sans-serif</a></li>
+    <li><a href="#headline1106">serif</a></li>
+    <li><a href="#headline1037">cursive<a></li>
+    <li><a href="#headline1040">fantasy</a></li>
+    <li><a href="#headline1106">monospace</a></li>
 </ul>
 <h2>5種類の一般フォントファミリーキーワード</h2>
 <p>特定のフォントではなく一般的なフォントの種類を指すキーワードには、sans-serif、serif、cursive、fantasy、monospaceの5種類があります。</p>
@@ -110,20 +110,23 @@
 <h3 class="main-style">画像を表示する</h3>
 <!-- P100-P101 chapter5/c05-03-a/index.html -->
 <section id="ch08-3-a">
-
+<img src="images/opentab.png" width="904" height="527"
+alt="陽が沈む">
 </section>
 
 <h3 class="main-style">表示する画像サイズが伸縮されるようにする</h3>
 <!-- P102 chapter5/c05-03-b/index.html -->
 <section id="ch08-3-b">
 	<a href="c05-03-b.html" target="_blank">表示する画像サイズが伸縮されるようにする</a>
+    <img src="images/image1646.jpg" width="904" height="572" alt="陽が沈む" class="img-responsive">
 </section>
 
 <h3 class="main-style">画像を縮小して表示する</h3>
 <!-- P103 chapter5/c05-03-c/index.html -->
 <section id="ch08-3-c">
-
-	<img src="images/image1646.jpg" width="904" height="572" alt="陽が沈む">
+    <div class="thumbnail">
+	<img src="images/image1646.jpg" width="904" height="572" alt="陽が沈む" class="img-responsive">
+    </div>
 
 </section>
 
@@ -134,19 +137,20 @@
 <h3 class="main-style">画像にリンクをつける</h3>
 <!-- P104 chapter5/c05-04-a/index.html -->
 <section id="ch08-4-a">
-
+    <a href="http://studio947.net">
 	<img src="images/image0320.jpg" width="396" height="292" alt="積み木">
-
+    </a>
 </section>
 
 <h3 class="main-style">画像もテキストもクリックできるようにする</h3>
 <!-- P104-P105 chapter5/c05-04-b/index.html -->
 <section id="ch08-4-b">
-
+    <a href="http://studio947.net">
 	<div>
 		<img src="images/image0320.jpg" width="396" height="292" alt="">
 	</div>
 	<p>カラフルな積み木のセット</p>
+    </a>
 
 </section>
 
@@ -166,7 +170,7 @@
 <section id="ch08-4-d">
 <a href="http://studio947.net">
 	<div>
-		<img src="images/image0320.jpg" width="396" height="292" alt="積み木">
+		<img src="images/image0320.jpg" width="396" height="292" alt="積み木" class="frame">
 	</div>
 	<p>カラフルな積み木のセット</p>
 </a>

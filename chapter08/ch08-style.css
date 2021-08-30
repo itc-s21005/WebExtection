@@ -46,25 +46,40 @@ hr {
 /* P92-P93 chapter5/c05-02-a */
 
 #ch08-2-a
-
+a{
+ color: #0073bc;
+ }
 #ch08-2-a
-
+a:link {
+  color: #0073bc;
+ }
 #ch08-2-a
-
+a:visited{
+  color: #02314c;}
 #ch08-2-a
-
+a:hover {
+  color: #b7dbf2;
+ }
 #ch08-2-a
-
+a:active {
+  color: #4ca4e8;
+} 
 
 /* 実践的なWebデザインで書かれるCSSの例 */
 /* P94 chapter5/c05-02-b */
 
 #ch08-2-b
-
+a {
+  color: #0073bc;
+ }
 #ch08-2-b
-
+a:hover {
+  color: #b7dbf2;
+ }
 #ch08-2-b
-
+a:active {
+  color: #4ca4e8;
+ }
 /* リンクの下線を消して、ホバーの時に表示させる */
 /* P94-P95 chapter5/c05-02-c */
 
@@ -85,7 +100,12 @@ hr {
 	color: #b7dbf2;
 }
 #ch08-2-d
-
+a:active:{
+  color: #4ca4e8;
+}
+a[target="_blank"]::after {
+ content: url(images/opentab.png);
+ }
 /* 画像を縮小して表示する */
 /* P103 chapter5/c05-03-c */
 
@@ -95,19 +115,26 @@ hr {
 	height: auto;
 }
 #ch08-3-c
-
+.thumbnail {
+  width: 200px;
+ }
 
 /* ホバーしたとき画像の透明度を変更する */
 /* P105-P106 chapter5/c05-04-c */
 
 #ch08-4-c
-
+a:hover img {
+  opacity: 0.5;
+}
 /* ホバーしたとき画像に枠線をつける */
 /* P107 chapter5/c05-04-d */
 
 #ch08-4-d .frame {
 	padding: 8px;
 	border: 1px solid transparent;
+}
+a:hover .frame {
+  border: 1px solid #ccc;
 }
 #ch08-4-d
 
@@ -119,6 +146,7 @@ hr {
 	margin: 0 0 1em 0;
 }
 #ch08-5-a .float-box {
+    float: left;
 	margin-right: 1em;
 	margin-bottom: 0.5em;
 	vertical-align: baseline;

@@ -157,7 +157,6 @@ hr {
 #ch10-3-a .price caption {
 	color: #1f8ef5;
 }
-#ch10-3-a .price th,
 #ch10-3-a td {
 	border: 1px solid #e3ecf5;
 	padding: 8px;
@@ -167,17 +166,24 @@ hr {
 	color: #fff;
 	background: #1f8ef5;
 }
-#ch10-3-a 
+#ch10-3-a .price tr:nth-child(odd) {
+background: #e3ecf5;
+}
 
 
 /* P167-168 chapter7/c07-03-b */
 #ch10-3-b 
+.table-wrapper {
+  overflow-x: scroll;
+}
 
 #ch10-3-b table {
 	border-collapse: collapse;
 }
 #ch10-3-b 
-
+.price {
+  width: 1000px;
+}
 #ch10-3-b .price caption {
 	text-align: left;
 }
@@ -187,5 +193,5 @@ hr {
 	padding: 8px;
 }
 #ch10-3-b .price th {
-	
+  white-space: nowrap;	
 }
