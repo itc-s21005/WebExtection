@@ -3,13 +3,45 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>標準的なフォームの例</title>
+    <title>Document</title>
+    <style>
+        input {
+            box-sizing: border-box;
+        }
+
+        input[type="text"] {
+            width: 100%;
+        }
+
+        .required {
+            padding: 0.5em;
+            font-size: 0.5em;
+            color: #ff0000;
+        }
+    </style>
 </head>
 
 <body>
-    <form action=""></form>
-    <input type="checkbox" name="" id="">
+    <form action="">
+        <p>
+            <label for="name-field">お名前 <span class="required">*必須</span></label>
+            <br><input type="text" name="" id="name-field" required>
+        </p>
+    </form>
+    <p>
+        <input type="checkbox" name="" id="">選択１<br>
+        <input type="checkbox" name="" id="">選択２<br>
+        <input type="checkbox" name="" id="">選択３<br>
+        <input type="checkbox" name="" id="">選択４<br>
+    </p>
+    <select name="" id="">
+        <option value="">セレクト１</option>
+        <option value="" selected>セレクト２</option>
+        <option value="">セレクト３</option>
+        <option value="">セレクト４</option>
+    </select>
 </body>
 
 </html>
